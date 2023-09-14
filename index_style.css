@@ -1,0 +1,110 @@
+@font-face {
+    font-family:RubikIso;
+    src: url(fonts/Rubik_Iso/RubikIso-Regular.ttf);
+}
+@font-face {
+    font-family: Moon_dance;
+    src: url(fonts/Moon_Dance/);
+}
+
+
+html, head, body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+main{
+    background-color: #000000;
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.loadpage_box {
+    margin-left: auto;
+    margin-top: 10%;
+    min-width: 30%;
+    max-width: 70%;
+    text-align: center;
+    padding-right: 0px;
+}
+
+
+.l_quote {
+    background-color: #fff;
+    font-size: 100px;
+    font-family: Moon_Dance, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000000;
+    
+}
+
+.l_button{
+    
+    margin:auto;
+    margin-top: -5%;
+    text-align: center;
+}
+
+.l_button .a_button{
+    color: rgb(255, 255, 255);
+    width: 300px;
+    height: 50px;
+    padding: 5px;
+    /*border: 1px solid black;*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+    outline:auto;
+    outline-style:dashed;
+    
+    background: linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%);
+    background-size: 200% 100%;
+    background-position:right bottom ;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+
+.l_button .a_button:hover{
+    background-position: left bottom;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+
+}
+/*  ///This is to change Colour of HARDER & LUCKIER WHEN BUTTON IS HOVERED*/
+.a_button:hover .shown {
+    display: block;
+    background: linear-gradient(to right, rgb(255, 255, 255) 50%, #ff0055 50%);
+    background-size: 200% 100%;
+    background-position:right bottom ;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+
+.shown{
+    border: 3px dashed #ff0055;
+}
+.pink{
+    background-color: #ff0055;
+}
